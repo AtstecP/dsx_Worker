@@ -1,0 +1,17 @@
+D:\VS projects\dxfWorker\dxfWorker\bin\Debug\net6.0-windows\dxfWorker.exe
+D:\VS projects\dxfWorker\dxfWorker\bin\Debug\net6.0-windows\dxfWorker.deps.json
+D:\VS projects\dxfWorker\dxfWorker\bin\Debug\net6.0-windows\dxfWorker.runtimeconfig.json
+D:\VS projects\dxfWorker\dxfWorker\bin\Debug\net6.0-windows\dxfWorker.dll
+D:\VS projects\dxfWorker\dxfWorker\bin\Debug\net6.0-windows\dxfWorker.pdb
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.csproj.AssemblyReference.cache
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.Form1.resources
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.csproj.GenerateResource.cache
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.AssemblyInfoInputs.cache
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.AssemblyInfo.cs
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.csproj.CoreCompileInputs.cache
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.dll
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\refint\dxfWorker.dll
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.pdb
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\dxfWorker.genruntimeconfig.cache
+D:\VS projects\dxfWorker\dxfWorker\obj\Debug\net6.0-windows\ref\dxfWorker.dll
