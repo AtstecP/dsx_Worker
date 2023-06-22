@@ -10,7 +10,7 @@ namespace dxfWorker
             {
                 label1.Text = Clipboard.GetText();
             }
-            label2.Text = "";
+            label2.Text = "Click select folder";
         }
 
         private void copy_Folder(string sourse, string dest)
@@ -26,28 +26,42 @@ namespace dxfWorker
                 copy_Folder(dir, $"{dest}\\{Path.GetFileName(dir)}");
             }
         }
-
+        
         private void change_Folder(object sender, EventArgs e)
         {
-            Button butt =(Button)sender;
+            Button butt = (Button)sender;
             string sourse = $"{label2.Text}\\{butt.Text}\\{butt.Text} 0";
-            string dest = $"{label2.Text}\\{butt.Text}\\{butt.Text}_{label1.Text}";
+            string dest = $"{label2.Text}\\{butt.Text}\\{label1.Text}";
+            start_process(sourse, dest);
+        }
+        private void button_Enter(object sender, EventArgs e)
+        {
+            string sourse = $"{label2.Text}\\{textBox1.Text}\\{textBox1.Text} 0";
+            string dest = $"{label2.Text}\\{textBox1.Text}\\{label1.Text}";
+            start_process(sourse, dest);
+        }
+
+        private void start_process(string sourse, string dest)
+        {
+            if (!File.Exists(sourse))
+            {
+                MessageBox.Show(
+                "Файл не был найден, проверьте путь",
+                "Path Error", 
+                MessageBoxButtons.OK, 
+                MessageBoxIcon.Error 
+                );
+                return;
+            }
             copy_Folder(sourse, dest);
             DirectoryInfo sourse_Dir = new DirectoryInfo(sourse);
             foreach (FileInfo file in sourse_Dir.GetFiles("*.dxf"))
             {
                 file.Delete();
             }
-            System.Diagnostics.Process.Start("D:\\deletMe\\markDXF.exe", dest);
-            /*System.Diagnostics.Process process1 = new System.Diagnostics.Process();
-            process1.StartInfo.FileName = @"D:\deletMe\markDXF.exe";
-            process1.StartInfo.Arguments = dest;
-            process1.Start();
-            process1.WaitForExit();
-            process1.Close();*/
-
+            markDXFBase.Convert(new string[] { dest });
         }
- 
+
         private void label1_Click(object sender, EventArgs e)
         {
             if (Clipboard.GetText().Length > 0)
@@ -72,5 +86,17 @@ namespace dxfWorker
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }   

@@ -8,4 +8,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="netDxf">
+      <HintPath>C:\Users\Atstec\Desktop\mark\markDXF\lib\netDxf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
